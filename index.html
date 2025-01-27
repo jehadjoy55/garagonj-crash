@@ -5,18 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Garagonj Crush and Confidence</title>
     <style>
-        body {
+        body, html {
             margin: 0;
             padding: 0;
-            color: #333;
-            text-align: center;
-            overflow-y: auto;
-            position: relative;
+            height: 100%;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
         }
 
-        /* The iframe that holds the live flower page */
+        /* Full-page iframe to display the live flower page */
         iframe {
-            position: absolute;
+            position: fixed;
             top: 0;
             left: 0;
             width: 100%;
@@ -25,15 +24,20 @@
             z-index: -1; /* Put it behind the content */
         }
 
+        /* Container for content */
         .container {
-            position: relative;
-            padding: 20px;
-            z-index: 1; /* Ensure the content stays on top */
-            color: white; /* Adjust text color for better contrast with the background */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); /* Center the content */
+            color: white;
+            text-align: center;
+            z-index: 1;
         }
 
         h1 {
             color: #0078d7;
+            font-size: 2.5rem;
         }
 
         .description {
@@ -84,4 +88,5 @@
     </div>
 </body>
 </html>
+
 
