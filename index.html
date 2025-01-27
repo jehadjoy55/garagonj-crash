@@ -6,20 +6,30 @@
     <title>Garagonj Crush and Confidence</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-image: url('https://your-image-url-here.jpg'); /* Replace with actual image URL */
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
             color: #333;
             text-align: center;
             overflow-y: auto;
+            position: relative;
+        }
+
+        /* The iframe that holds the live flower page */
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+            z-index: -1; /* Put it behind the content */
         }
 
         .container {
+            position: relative;
             padding: 20px;
+            z-index: 1; /* Ensure the content stays on top */
+            color: white; /* Adjust text color for better contrast with the background */
         }
 
         h1 {
@@ -58,6 +68,7 @@
     </style>
 </head>
 <body>
+    <iframe src="https://jehadjoy55.github.io/flower/" title="Live Flower Background"></iframe>
     <div class="container">
         <h1>Welcome to Garagonj Crush and Confidence</h1>
 
@@ -73,3 +84,4 @@
     </div>
 </body>
 </html>
+
