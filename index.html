@@ -9,7 +9,8 @@
             margin: 0;
             padding: 0;
             height: 100%;
-            overflow: hidden;
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+            overflow-y: auto; /* Enable vertical scrolling */
             font-family: Arial, sans-serif;
         }
 
@@ -33,6 +34,8 @@
             color: white;
             text-align: center;
             z-index: 1;
+            width: 90%; /* Ensure content fits on smaller screens */
+            max-width: 600px; /* Limit maximum width for larger screens */
         }
 
         h1 {
@@ -42,7 +45,6 @@
 
         .description {
             margin: 20px auto;
-            max-width: 600px;
             font-size: 1.1rem;
             line-height: 1.6;
         }
